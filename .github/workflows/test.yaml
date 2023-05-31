@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: 
+      - name: Logging github event
         run: echo '${{ toJSON(github.event) }}' | jq
       - name: Check if the PR is closed
         run: echo "Hello world"
