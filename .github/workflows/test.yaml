@@ -4,8 +4,8 @@ on:
   issue_comment:
     types: [created, edited]
 
-permissions:
-  contents: read
+# permissions:
+#   contents: read
 
 jobs:
   check-pr:
