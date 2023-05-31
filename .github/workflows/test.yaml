@@ -11,9 +11,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: Check if the PR is closed
         run: echo "Hello world"
-      - name: Check if the PR is 
+      - name: Check if the PR is approved
         run: echo "Hello world"
-      - name: Check if the PR is 
+      - name: Check if the PR has commit ID from copybara
         run: echo "Hello world"
   
 
