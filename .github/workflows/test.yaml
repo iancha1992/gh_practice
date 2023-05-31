@@ -1,4 +1,4 @@
-name: Test workflow
+name: cherry-pick automation
 
 on:
   issue_comment:
