@@ -1,26 +1,26 @@
-name: Hello world workflow
+# name: Hello world workflow
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
   
-  pull_request:
-    branches:
-      - main
+#   pull_request:
+#     branches:
+#       - main
 
-  workflow_dispatch:
+#   workflow_dispatch:
 
-jobs:
-  hello:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: hello world
-        run: echo "Hello worldddd"
-      - name: ls 
-        run: ls -la
-      - name: pwd
-        run: pwd
+# jobs:
+#   hello:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: hello world
+#         run: echo "Hello worldddd"
+#       - name: ls 
+#         run: ls -la
+#       - name: pwd
+#         run: pwd
 
 

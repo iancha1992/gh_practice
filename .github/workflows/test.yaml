@@ -1,14 +1,19 @@
+name: Test workflow
 
+on:
+  issue_comment:
+    types: [created, edited]
 
-
-
-
-
-
-
-
-
-
-
-
+jobs:
+  check-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check if the PR is closed
+        run: echo "Hello world"
+      - name: Check if the PR is 
+        run: echo "Hello world"
+      - name: Check if the PR is 
+        run: echo "Hello world"
+  
 
