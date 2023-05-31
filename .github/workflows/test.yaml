@@ -19,7 +19,7 @@ jobs:
         run: echo "Hello world"
       - name: Check if the PR is approved
         run: echo "Hello world"
-      # - name: Run helper
-      #   uses: iancha1992/CI-helpers/actions/
+      - name: Run helper
+        uses: iancha1992/CI-helpers/actions/
 
   
