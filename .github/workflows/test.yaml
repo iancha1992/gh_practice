@@ -9,16 +9,21 @@ on:
 
 jobs:
   check-pr:
-    if: startsWith(github.event.comment.body, '@bazel-io')
+    # if: startsWith(github.event.comment.body, '@bazel-io')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Logging github event
         run: echo '${{ toJSON(github.event) }}' | jq
       - name: Check if the PR is closed
-        run: echo "Hello world"
-      - name: Check if the PR is approved
-        run: echo "Hello world"
+        if: ${{github.event.issue.state == 'closed'))
+        run: echo "Issue closed"
+      # - name: Check if the PR is approved
+      #   if: 
+      #   run: echo "Hello world"
+      # - name: Check if the PR has copybara commit ID
+      #   if: 
+      #   run: echo "Hello world"
       - name: Run helper
         uses: iancha1992/CI-helpers/actions/release-helper@HEAD
 
