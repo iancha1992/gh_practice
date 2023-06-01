@@ -15,9 +15,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: Logging github event
         run: echo '${{ toJSON(github.event) }}' | jq
-      - name: Check if the PR is closed
-        if: ${{github.event.issue.state == 'closed'))
-        run: echo "Issue closed"
+      # - name: Check if the PR is closed
+      #   if: ${{github.event.issue.state == 'closed'))
+      #   run: echo "Issue closed"
       # - name: Check if the PR is approved
       #   if: 
       #   run: echo "Hello world"
