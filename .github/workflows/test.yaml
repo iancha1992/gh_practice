@@ -28,6 +28,8 @@ jobs:
         uses: iancha1992/CI-helpers/actions/release-helper@HEAD
         with:
           token: ${{ secrets.TEST_SECRET }}
+          issue_number: ${{ github.event.issue.number }}
+
 
   
 
