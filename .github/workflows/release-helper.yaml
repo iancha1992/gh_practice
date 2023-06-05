@@ -3,6 +3,8 @@ name: cherry-pick automation
 on:
   issue_comment:
     types: [created, edited]
+  issues:
+    types: [closed]
 
 # permissions:
 #   contents: read
