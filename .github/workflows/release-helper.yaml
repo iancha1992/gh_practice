@@ -9,7 +9,7 @@ on:
 
 jobs:
   check-pr:
-    # if: startsWith(github.event.comment.body, '@bazel-io')
+    if: startsWith(github.event.comment.body, '@bazel-io')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
