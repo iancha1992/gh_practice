@@ -11,7 +11,7 @@ on:
 
 jobs:
   check-pr:
-    if: startsWith(github.event.comment.body, '@bazel-io')
+    if: startsWith(github.event.comment.body, '@bazel-io') || github.event.action == 'closed'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -31,6 +31,7 @@ jobs:
         with:
           token: ${{ secrets.TEST_SECRET }}
           # issue_number: ${{ github.event.issue.number }}
+        
 
 
   
