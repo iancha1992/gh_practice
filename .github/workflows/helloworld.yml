@@ -11,3 +11,8 @@ jobs:
     steps:
       - name: Print hello world
         run: echo "hello world!!!! from Ian cha"
+  print_issue_title: # Removed space and period
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello world
+        run: echo ${{ github.event.issue.title }}
