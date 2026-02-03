@@ -15,4 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print hello world
-        run: echo ${{ github.event.issue.title }}
+        env:
+          # Store the title in an environment variable for safety
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: |
+          echo "The issue title is: $ISSUE_TITLE"
+          echo "Hello world!!!! from Ian cha"
