@@ -1,8 +1,9 @@
 name: hello world print
 
 on:
-  pull_request:
-    types: [opened]
+  issues:
+    types:
+      - opened
 
 jobs:
   trigger index.js:
