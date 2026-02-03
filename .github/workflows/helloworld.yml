@@ -6,9 +6,8 @@ on:
       - opened
 
 jobs:
-  trigger_index.js:
+  hello_world_job: # Removed space and period
     runs-on: ubuntu-latest
     steps:
-      # - uses: actions/checkout@v2
       - name: Print hello world
-        run: echo hello world!!!! from Ian cha
+        run: echo "hello world!!!! from Ian cha"
